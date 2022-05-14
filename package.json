@@ -1,0 +1,22 @@
+{
+   "name": "parallax-reality",
+   "version": "1.0.0",
+   "description": "A full-stack developer portfolio website displaying my skills and projects.",
+   "author": "parallax",
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/parallax/parallaxreality1.0"
+   },
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "serve": "vite preview"
+   },
+   "devDependencies": {
+      "vite": "^2.9.9"
+   },
+   "dependencies": {
+      "three": "^0.140.2"
+   }
+}
