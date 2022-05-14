@@ -4,13 +4,40 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ThreeJs + Vite Template</title>
+   <title>Parallax Reality: Front-End Developer and Artist</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;800&family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+   <link rel="icon" type="image/svg+xml" href="assets/favicon.ico" />
+
    <link type="text/css" rel="stylesheet" href="/src/css/main.css"> 
 </head>
 <body>
    <canvas id="bg"></canvas>
    <main>
-      
+      <nav class="row d-md-flex d-none">
+         <a id="home-link" class="nav-link-home col-md-1 d-md-inline d-none"
+            ><img id="home-img" src="img\personal_img.png" alt=""
+         /></a>
+
+         <div class="link-list col-10">
+            <div class="row text-center">
+               <a id="btn-web" class="nav-link-btn col-md-3 d-md-inline d-none"
+                  ><h1>Web</h1></a
+               >
+               <a id="btn-games" class="nav-link-btn col-md-3 d-md-inline d-none"
+                  ><h1>Games</h1></a
+               >
+               <a id="btn-art" class="nav-link-btn col-md-3 d-md-inline d-none"
+                  ><h1>Art</h1></a
+               >
+               <a id="btn-contact" class="nav-link-btn col-md-3 d-md-inline d-none"
+                  ><h1>Contact</h1></a
+               >
+            </div>
+         </div>
+      </nav>
       <div class="div"> 
          <h1>Parallax Reality</h1>
          <h3>Coming Soon...</h3>
@@ -20,5 +47,11 @@
    <!--Js script-->
    <script type="module" src="/src/js/components.js"></script>
    <script type="module" src="/src/js/main.js"></script>
+
+   <!--Other script-->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js" ></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body>
 </html>
