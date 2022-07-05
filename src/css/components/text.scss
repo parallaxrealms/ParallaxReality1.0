@@ -1,65 +1,121 @@
-nav{
-  h1{
+nav {
+  h1 {
     font-size: 3rem;
     @include h1_nav;
+    font-weight: 900;
   }
-  a{
+
+  a {
     color: $black;
     text-shadow: -4px 2px 0px rgba(255, 255, 255, 0.5);
   }
-  a:hover{
+
+  a:hover {
     color: $white;
   }
 }
-section{
-  h1{
+
+.btn-visit {
+  @include h1_nav;
+  font-weight: 200;
+}
+
+.btn-submit-form {
+  @include h1_nav;
+  font-weight: 200;
+  text-transform: none;
+}
+
+section {
+  h1 {
     @include h1_section;
     text-align: center;
   }
-  h6{
+
+  h6 {
     @include h6_item;
   }
-  p{
+
+  p {
     @include p_section;
   }
-  a{
+
+  a {
     color: $white;
     font-weight: 400;
   }
-  a:hover{
+
+  a:hover {
     color: $neon-teal;
     font-weight: 400;
   }
-  .rating-category{
-    display:block;
+
+  .rating-category {
+    display: block;
     background-color: $dark;
     border-radius: 5px;
     padding: 0px;
     padding-right: 10px;
     margin: 6px;
     text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
-    p{
-      font-size: .9rem;
+
+    p {
+      font-size: 1rem;
     }
   }
-  .stars{
+
+  .stars {
     padding-left: 10px;
     color: $neon-teal;
     font-size: 2rem;
   }
 }
-.gallery-cards{
-  h5{
+
+.social-icons {
+  font-size: .9rem;
+}
+
+
+.gallery-cards {
+  h5 {
     font-size: 1rem;
     line-height: 1rem;
     font-weight: 500;
     padding: 0px;
-    }
+  }
 }
-.right-desc{
-  span{
+
+.galleryTitle {
+  text-align: center;
+
+  h2 {
+    color: $white;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+.galleryCaption {
+  font-size: 1.1rem;
+  height: auto;
+}
+
+.right-desc {
+  span {
     @include span_learnmore;
   }
+}
+
+.contact-link {
+  font-weight: 800;
+}
+
+.contact-link:hover {
+  font-weight: 800;
+}
+
+.form-label {
+  color: rgb(255 255 255 / 60%) !important;
 }
 
 /******** Bouncing Arrows ********/
@@ -67,8 +123,10 @@ section{
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
 }
+
 /* Scroll down indicator (bouncing) */
 @-webkit-keyframes bounce {
+
   0%,
   100%,
   20%,
@@ -85,7 +143,9 @@ section{
     -webkit-transform: translateY(-15px);
   }
 }
+
 @-moz-keyframes bounce {
+
   0%,
   100%,
   20%,
@@ -102,7 +162,9 @@ section{
     -moz-transform: translateY(-15px);
   }
 }
+
 @keyframes bounce {
+
   0%,
   100%,
   20%,

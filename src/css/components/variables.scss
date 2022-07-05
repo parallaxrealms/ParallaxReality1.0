@@ -62,7 +62,23 @@
 /* Hide the slides by default */
 .galleryImage {
 	display: none;
+	margin: auto;
+	max-width: 600px;
+	max-height: 1100px !important;
+
+	img {
+		max-width: 100% !important;
+		max-height: 900px !important;
+		margin: auto;
+		padding: auto;
+	}
+
+	p {
+		font-size: 1rem;
+	}
 }
+
+
 
 /* Next & previous buttons */
 .prev,
@@ -98,7 +114,7 @@
 	font-size: 24px;
 	padding: 8px 12px;
 	position: absolute;
-	top: 0;
+	top: 20;
 }
 
 /* Caption text */
@@ -128,12 +144,24 @@ img.hover-shadow {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+///Magnifying Glass
+.img-magnifier-glass {
+	position: absolute;
+	border: 3px solid #000;
+	border-radius: 50%;
+	cursor: none;
+	/*Set the size of the magnifier glass:*/
+	width: 100px;
+	height: 100px;
+}
+
 //Unity Stuff
 .webgl-content * {
 	border: 0;
 	margin: 0;
 	padding: 0;
 }
+
 .webgl-content {
 	position: absolute;
 	top: 55%;
@@ -150,16 +178,19 @@ img.hover-shadow {
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .webgl-content .logo {
 	background: url('progressLogo.Light.png') no-repeat center / contain;
 	width: 154px;
 	height: 130px;
 }
+
 .webgl-content .progress {
 	height: 18px;
 	width: 141px;
 	margin-top: 90px;
 }
+
 .webgl-content .progress .empty {
 	background: url('progressEmpty.Light.png') no-repeat right / cover;
 	float: right;
@@ -167,6 +198,7 @@ img.hover-shadow {
 	height: 100%;
 	display: inline-block;
 }
+
 .webgl-content .progress .full {
 	background: url('progressFull.Light.png') no-repeat left / cover;
 	float: left;
@@ -178,9 +210,11 @@ img.hover-shadow {
 .webgl-content .logo.Dark {
 	background-image: url('progressLogo.Dark.png');
 }
+
 .webgl-content .progress.Dark .empty {
 	background-image: url('progressEmpty.Dark.png');
 }
+
 .webgl-content .progress.Dark .full {
 	background-image: url('progressFull.Dark.png');
 }
@@ -192,6 +226,7 @@ img.hover-shadow {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
 	font-size: 18px;
 }
+
 .webgl-content .footer .webgl-logo,
 .title,
 .fullscreen {
@@ -199,15 +234,18 @@ img.hover-shadow {
 	display: inline-block;
 	background: transparent center no-repeat;
 }
+
 .webgl-content .footer .webgl-logo {
 	background-image: url('webgl-logo.png');
 	width: 204px;
 	float: left;
 }
+
 .webgl-content .footer .title {
 	margin-right: 10px;
 	float: right;
 }
+
 .webgl-content .footer .fullscreen {
 	background-image: url('fullscreen.png');
 	width: 38px;
